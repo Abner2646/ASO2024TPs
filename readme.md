@@ -13,4 +13,5 @@ Después de hacer eso, noté que el programa tardaba más en completarse. Porque
 Estos bucles estaban dentro de las partes de sumar y restar, y cada uno se ejecutaba mil veces. Aunque no hacían nada importante, aumentaban el tiempo total que el programa tardaba en ejecutarse.
 
 ## 2A
-<a href="./con_race_condition2.0.c">puzzle corregido</a>
+
+<a href="./tp3/con_race_condition2.0.c">puzzle corregido</a>
