@@ -15,3 +15,6 @@ Estos bucles estaban dentro de las partes de sumar y restar, y cada uno se ejecu
 ## 2A
 
 <a href="./tp3/con_race_condition2.0.c">puzzle corregido</a>
+
+## 2B
+<a href="./tp3/diagrama-flujo1.0.jpeg">Diagrama - Imagen</a>
