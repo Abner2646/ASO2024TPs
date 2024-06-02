@@ -7,10 +7,12 @@ En promedio el tiempo de ejecución con hilos es de 4.01460 segundos mientras qu
 Comparando con mi compañero, el tuvo en la ejecución con hilos 4.05920 y sin hilos tuvo 5.23259.
 
 
-## 1C
-Después de hacer eso, noté que el programa tardaba más en completarse. Porque cuando descomente, agregué dos bucles extra que no hacían nada útil, solo esperaban un poco.
+## 1C (Corrección)
+En el código original, ambos hilos acceden y modifican la variable "acumulador" sin sincronización. Esto puede llevar a una condición de carrera, donde los hilos compiten por el acceso a acumulador, produciendo resultados impredecibles.
 
-Estos bucles estaban dentro de las partes de sumar y restar, y cada uno se ejecutaba mil veces. Aunque no hacían nada importante, aumentaban el tiempo total que el programa tardaba en ejecutarse.
+Al descomentar las líneas, las operaciones de incremento y decremento en los hilos no están sincronizadas, lo que intensifica el problema de la condición de carrera.
+
+La ejecución del código sin sincronización resulta en tiempos de ejecución impredecibles debido a la condición de carrera, donde los hilos compiten por recursos compartidos sin un control adecuado.
 
 ## 2A 
 
