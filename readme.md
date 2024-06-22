@@ -1,53 +1,46 @@
-# TP3
-## 1A
-Se puede notar del tiempo de ejecución que es menor cuando se usan hilos porque con hilos se ejecutan procesos en paralelo.
-En promedio el tiempo de ejecución con hilos es de 4.01460 segundos mientras que sin hilos es de 5.13283.
+# PROYECTO 5 ARQ
 
-## 1B
-Comparando con mi compañero, el tuvo en la ejecución con hilos 4.05920 y sin hilos tuvo 5.23259.
+## INTEGRANTES
+- Abner Grgurich
+- Bautista Tordini
+
+## Descripción
+Este proyecto consta de dos scripts en bash scripting que implementan un juego de adivinanza y una funcionalidad para saber el clima.
+
+## Archivos incluidos
+
+### Parte I: Juego
+
+1. `adivinar_numero.sh`: Este script genera un numero aleatorio entre 1 y 100 y le pide al usuario que lo adivine. Al ejecutarlo desde la terminal, se inicia el juego para adivinar el número.
+
+### Parte II: Integración de API
+
+3. `clima.sh`: Script para obtener el clima actual de cualquier localidad utilizando la API de weatherapi.com. Utilizamos los documentos dedicha API para llevar a cabo la utilizacion de json para poder leer los datos del clima.
+
+## Instrucciones generales para ejecutar
+
+1. **Clonar el repositorio**:
+
+<code> git clone https://github.com/BautistaTordini/PROYECTO5_ARQ.git
 
 
-## 1C (Corrección)
-En el código original, ambos hilos acceden y modifican la variable "acumulador" sin sincronización. Esto puede llevar a una condición de carrera, donde los hilos compiten por el acceso a acumulador, produciendo resultados impredecibles.
+2. **Navegar al directorio**:
 
-Al descomentar las líneas, las operaciones de incremento y decremento en los hilos no están sincronizadas, lo que intensifica el problema de la condición de carrera.
+<code> cd PROYECTO5_ARQ
 
-La ejecución del código sin sincronización resulta en tiempos de ejecución impredecibles debido a la condición de carrera, donde los hilos compiten por recursos compartidos sin un control adecuado.
+3. **Dar permisos de ejecución**:
 
-## 2A 
+<code> chmod +x adivinar_numero.sh
 
-<a href="./tp3/con_race_condition2.0.c">puzzle corregido</a>
 
-## 2B
-<a href="./tp3/diagrama-flujo1.0.jpeg">Diagrama - Imagen</a>
+4. **Ejecutar los scripts**:
+- Para jugar "Adivina el numero":
+  ```
+  ./adivinar_numero.sh
+  ```
+- Para obtener el clima de una ciudad:
+  ```
+  ./clima.sh
+  ```
 
-## TP4
-
-## Capturas de Pantalla: 
-
-### Imagen: 
-![alt text](<Capturas_tp4/Proceso/Captura de pantalla_2024-05-31_14-55-45.png>)
-
-### Imagen: 
-![alt text](Capturas_tp4/Proceso/Screenshot_clone_y_move.png)
-
-### Imagen: 
-![alt text](Capturas_tp4/Proceso/Screenshot_compose1.0.png)
-
-### Imagen:
- ![alt text](Capturas_tp4/Proceso/screenshot_compose1.1.png)
-
-### Imagen: 
-![alt text](Capturas_tp4/Proceso/Screenshot_docker_version.png)
-
-### Imagen: 
-![alt text](Capturas_tp4/Proceso/Screenshot_holamundo.png)
-
-### Imagen: 
-![alt text](Capturas_tp4/Proceso/Screenshot_php_myadmin.png)
-
-### Imagen fiinal 1: 
-![alt text](Capturas_tp4/Finales/Captura_finalizacion.png)
-
-### Imagen final 2: 
-![alt text](Capturas_tp4/Finales/Captura_finalizacion.png)
+5. Sigue las instrucciones en la terminal para el juego o para saber la temperatura de cualquier localidad.
